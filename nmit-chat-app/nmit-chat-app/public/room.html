@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<video autoplay muted loop id="myVideo">
+		<source src="Blackg.mp4" type="video/mp4">
+	  </video>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>NMIT Chat</title>
+	</head>
+	<body class="dark-theme">
+		<div class="join-container">
+			<header class="join-header">
+				<h1> NMIT Chat</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="roomname">Create room</label>
+						<input
+							type="text"
+							name="roomname"
+							id="roomname"
+							placeholder="Enter room name..."
+							
+						/>
+					</div>
+					
+				
+					<div class="left-btn">
+						<button style="float: left;"type="submit" class="joinbtn">Join room</button>
+					</div>
+					
+					<!--<button style="float: left;" type="submit" class="joinbtn">Create room</button>
+					<button style="float:right;" type="submit" class="joinbtn">Join Chat</button>-->
+				</form>
+					<form action="index.html" class="right-btn">
+						<input style="float: right;"type="submit" value="Go back" class="roombtn"/>
+					</form>
+
+			</main>
+		</div>
+	</body>
+</html>

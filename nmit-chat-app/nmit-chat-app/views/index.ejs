@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<video autoplay muted loop id="myVideo">
+			<source src="Blackg.mp4" type="video/mp4">
+		  </video>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>NMIT Chat</title>
+	</head>
+	<body class="dark-theme">
+		<div class="join-container">
+			<header class="join-header">
+				<h1> NMIT Chat </h1>
+				<br>
+				<h2> Login </h2>
+			</header>
+			<main class="join-main">
+                <form action="/" method="POST">
+			<!--	<form action="chat.html">-->
+					<div class="form-control">
+						<label for="username">Username</label>
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+						
+					</div>
+					<div class="form-control">
+						<label for="username">Email ID</label>
+						<i class="far fa-envelope" aria-hidden="true"></i>
+						<input
+							type="text"
+							name="email"
+							id="email"
+							placeholder="Enter your email address..."
+							required
+						/>
+						
+					</div>
+					<div class="form-control">
+						<label for="password">Password</label>
+						<i class="fa fa-key" aria-hidden="true"></i>
+
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Enter password..."
+							required
+
+							/>
+							<span class="eye">
+								<i id="hide1" class="fa fa-eye" aria-hidden="true"></i>
+	
+							</span>
+					</div>
+					<div class="form-control">
+						<label for="room">Room</label>
+						<select namainme="room" id="room">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Python">Python</option>
+							<option value="PHP">PHP</option>
+							<option value="C#">C#</option>
+							<option value="Ruby">Ruby</option>
+							<option value="Java">Java</option>
+						</select>
+					</div>
+				
+					<div class="left-btn">
+						<button style="float: left;"type="submit" class="joinbtn">Join chat</button>
+					</div>
+					
+					<!--<button style="float: left;" type="submit" class="joinbtn">Create room</button>
+					<button style="float:right;" type="submit" class="joinbtn">Join Chat</button>-->
+				</form>
+					<form action="room.html" class="right-btn">
+						<input style="float: right;"type="submit" value="Create room" class="roombtn"/>
+					</form>
+</form>
+			</main>
+			<label style="color: orange; font-size: large; margin-left: 20px;" for="register">Haven't registered yet? <a href="/register">Register now!</a></label>
+
+		</div>
+		<script>
+			const togglepassword= document.querySelector('#hide1');
+			const password=document.querySelector('#password');
+			togglepassword.addEventListener('click', function (e) {
+	const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+	
+    password.setAttribute('type', type);
+	this.classList.toggle('fa-eye-slash');
+	
+	
+});
+		</script>
+
+
+
+	</body>
+</html>
